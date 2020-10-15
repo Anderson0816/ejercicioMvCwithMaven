@@ -11,11 +11,11 @@ package edu.cundi.ejerciciomvcwithmaven.modelo;
  */
 public class Carro implements Comparable<Carro> {
 
-    private int modelo;
+    private String modelo;
     private String tipo;
     private String placa;
 
-    public Carro(int modelo, String tipo, String placa) {
+    public Carro(String modelo, String tipo, String placa) {
         this.modelo = modelo;
         this.tipo = tipo;
         this.placa = placa;
@@ -27,14 +27,14 @@ public class Carro implements Comparable<Carro> {
     /**
      * @return the modelo
      */
-    public int getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
     /**
      * @param modelo the modelo to set
      */
-    public void setModelo(int modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
