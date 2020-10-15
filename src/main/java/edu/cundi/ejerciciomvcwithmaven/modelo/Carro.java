@@ -9,7 +9,8 @@ package edu.cundi.ejerciciomvcwithmaven.modelo;
  *
  * @author LENOVO
  */
-public class Carro {
+public class Carro implements Comparable<Carro> {
+
     private int modelo;
     private String tipo;
     private String placa;
@@ -22,8 +23,6 @@ public class Carro {
 
     public Carro() {
     }
-
-    
 
     /**
      * @return the modelo
@@ -68,7 +67,12 @@ public class Carro {
     }
 
     @Override
+    public int compareTo(Carro t) {
+        return placa.compareToIgnoreCase(t.getPlaca());
+    }
+
+    @Override
     public String toString() {
-        return  "\nmodelo: " + modelo + "\n tipo: "+ tipo + "\nplaca: " + placa;
+        return "\nmodelo: " + modelo + "\n tipo: " + tipo + "\nplaca: " + placa;
     }
 }
