@@ -17,15 +17,15 @@ import javax.swing.*;
  * @author LENOVO
  */
 public class Interfaz extends JFrame implements ActionListener {
-
+    /*variables utilizadas*/
     ArrayList<Carro> vehiculo = new ArrayList<Carro>();
     public JTextField placa, modelo, tipo;
     public JButton insertar, ordenar, mostrar, salir;
     JLabel titulo, titulo1, titulo2, titulo3, titulo4;
     Carro car = new Carro();
-
+/*programacion de la interfaz*/
     public Interfaz() {
-
+       /*vista del programa*/
         titulo = new JLabel("Andy Helper");
         titulo.setBounds(100, 5, 100, 40);
         titulo1 = new JLabel("Placa :");
@@ -73,7 +73,12 @@ public class Interfaz extends JFrame implements ActionListener {
         setVisible(true);
 
     }
-
+/*metodos para el programa
+    insertar
+    mostrar
+    ordenar
+    salir
+    */
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -104,7 +109,7 @@ public class Interfaz extends JFrame implements ActionListener {
         }
 
     }
-
+/*metodo para limpiar las casillas*/
     private void limpiar() {
         placa.setText("");
         modelo.setText("");
