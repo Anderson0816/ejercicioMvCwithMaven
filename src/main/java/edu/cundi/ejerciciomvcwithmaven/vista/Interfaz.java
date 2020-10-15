@@ -94,7 +94,7 @@ public class Interfaz extends JFrame implements ActionListener {
 
         }
         if (compararBoton.equalsIgnoreCase("Salir")) {
-
+           System.exit(0);
         }
 
     }

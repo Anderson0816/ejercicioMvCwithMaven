@@ -5,10 +5,14 @@
  */
 package edu.cundi.ejerciciomvcwithmaven.controlador;
 
+import edu.cundi.ejerciciomvcwithmaven.vista.Interfaz;
+
 /**
  *
  * @author LENOVO
  */
 public class Parqueadero {
-    
+       public static void main(String[] args) {
+        Interfaz vehiculo = new Interfaz();  
+    }
 }
